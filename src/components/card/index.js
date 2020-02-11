@@ -1,13 +1,13 @@
 import React from "react";
-import { CardWrapper, Body, Title, Subtitle } from "./styled";
+import { CardWrapper, Header, Body, Title, Subtitle } from "./styled";
 
 function Card({ title, subtitle, children }) {
   return (
     <CardWrapper>
-      <Body>
+      <Header>
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
-      </Body>
+      </Header>
       <Body>{children}</Body>
     </CardWrapper>
   );
