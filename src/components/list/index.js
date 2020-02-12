@@ -1,7 +1,7 @@
 import React from "react";
 
 import { EditOutlined, DeleteOutlined } from "@material-ui/icons";
-import Checkbox from "../checkbox";
+import { CheckOutlined } from "@material-ui/icons";
 
 import {
   ListWrapper,
@@ -9,7 +9,9 @@ import {
   Text,
   ButtonItem,
   Label,
-  ButtonsWrapper
+  ButtonsWrapper,
+  CheckInput,
+  CheckCustom
 } from "./styled";
 
 function List({ list }) {
@@ -17,8 +19,13 @@ function List({ list }) {
     return list.map(({ _id, description }) => (
       <ItemList key={_id}>
         <Label htmlFor={_id}>
-          <Checkbox id={_id} />
-          <Text>{description}</Text>
+          <CheckInput id={_id} type="checkbox" />
+          <Text>
+            <CheckCustom>
+              <CheckOutlined />
+            </CheckCustom>
+            {description}
+          </Text>
         </Label>
         <ButtonsWrapper>
           <ButtonItem variant="edit">

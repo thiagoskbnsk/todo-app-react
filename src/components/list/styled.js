@@ -20,6 +20,8 @@ export const Text = styled.span`
   font-family: Montserrat, sans-serif;
   color: #cacaca;
   font-weight: 300;
+  display: flex;
+  width: 100%;
 `;
 
 const variants = {
@@ -59,4 +61,28 @@ export const Label = styled.label`
   width: 100%;
   display: flex;
   cursor: pointer;
+`;
+
+export const CheckCustom = styled.span`
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+`;
+
+export const CheckInput = styled.input`
+  display: none;
+
+  &:checked + span > ${CheckCustom} {
+    color: green;
+  }
+
+  &:checked + span {
+    text-decoration: line-through;
+  }
 `;
