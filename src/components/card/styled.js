@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const CardWrapper = styled.div`
-  box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 34px 24px 24px;
   background: #393e46;
   max-width: 600px;
-  margin: 100px auto;
+  margin: auto;
   border-radius: 3px;
   position: relative;
-  
+
   &:before {
-    content: '';
+    content: "";
     height: 10px;
     width: 100%;
     display: inline-block;
@@ -19,9 +19,9 @@ export const CardWrapper = styled.div`
     top: 0;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    background: #348F50;
-    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
-    background: linear-gradient(to right, #9638de,#45e8f9);
+    background: #9638de;
+    background: -webkit-linear-gradient(to right, #56b4d3, #348f50);
+    background: linear-gradient(to right, #9638de, #45e8f9);
   }
 `;
 
@@ -29,8 +29,7 @@ export const Header = styled.div`
   margin-bottom: 24px;
 `;
 
-export const Body = styled.div`
-`;
+export const Body = styled.div``;
 
 export const Title = styled.h3`
   font-size: 1.428571428571429rem;

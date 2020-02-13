@@ -31,7 +31,7 @@ function List({ list, editItem, deleteItem }) {
           <ButtonItem variant="edit" onClick={() => editItem()}>
             <EditOutlined />
           </ButtonItem>
-          <ButtonItem variant="delete" onClick={() => deleteItem()}>
+          <ButtonItem variant="delete" onClick={() => deleteItem(_id)}>
             <DeleteOutlined />
           </ButtonItem>
         </ButtonsWrapper>

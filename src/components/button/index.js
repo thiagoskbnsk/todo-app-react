@@ -1,10 +1,12 @@
-import React from 'react';
-import { ButtonStyled } from './styled';
+import React from "react";
+import { ButtonStyled } from "./styled";
 
-function Button({ onPress, children, variant = 'default' }) {
+function Button({ onClick, children, variant = "default" }) {
   return (
-    <ButtonStyled onClick={onPress} variant={variant}>{children}</ButtonStyled>
+    <ButtonStyled type="button" onClick={onClick} variant={variant}>
+      {children}
+    </ButtonStyled>
   );
-};
+}
 
 export default Button;
