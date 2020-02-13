@@ -14,7 +14,7 @@ import {
   CheckCustom
 } from "./styled";
 
-function List({ list }) {
+function List({ list, editItem, deleteItem }) {
   function RenderList({ list }) {
     return list.map(({ _id, description }) => (
       <ItemList key={_id}>
@@ -28,10 +28,10 @@ function List({ list }) {
           </Text>
         </Label>
         <ButtonsWrapper>
-          <ButtonItem variant="edit">
+          <ButtonItem variant="edit" onClick={() => editItem()}>
             <EditOutlined />
           </ButtonItem>
-          <ButtonItem variant="delete">
+          <ButtonItem variant="delete" onClick={() => deleteItem()}>
             <DeleteOutlined />
           </ButtonItem>
         </ButtonsWrapper>

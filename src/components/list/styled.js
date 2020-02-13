@@ -22,6 +22,7 @@ export const Text = styled.span`
   font-weight: 300;
   display: flex;
   width: 100%;
+  align-items: center;
 `;
 
 const variants = {
