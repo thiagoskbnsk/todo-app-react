@@ -1,3 +1,5 @@
 # todo-app
 
-loading...
+Example of todoist
+
+under construction...
